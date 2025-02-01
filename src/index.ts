@@ -3,9 +3,14 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 import connectDB from "./DB/connect";
-
+import bodyParser from 'body-parser';
 const app = express();
+import faqRoutes from './controller/qa.controller';
+
 app.use(cors());
+app.use(bodyParser.json());
+
+app.use('/api/faqs', faqRoutes);
 
 connectDB()
   .then(() => {

@@ -21,6 +21,7 @@ const quesans = new Schema({
       answer: { type: String }
     }
   }
-});
+}, { timestamps: true }
+);
 
 export default mongoose.model<context>('FAQ', quesans);
