@@ -18,7 +18,8 @@
     "expressjs": "^1.0.1",
     "init": "^0.1.2",
     "mongoose": "^8.9.6",
-    "redis": "^4.7.0"
+    "redis": "^4.7.0",
+    "wysiwyg-editor-node-sdk": "^4.4.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",

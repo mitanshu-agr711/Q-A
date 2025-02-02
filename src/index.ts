@@ -6,11 +6,13 @@ import connectDB from "./DB/connect";
 import bodyParser from 'body-parser';
 const app = express();
 import faqRoutes from './controller/qa.controller';
+import uploadRoutes from './utils/imgUploder';
 
 app.use(cors());
 app.use(bodyParser.json());
 
 app.use('/api/faqs', faqRoutes);
+app.use('/api',uploadRoutes);
 
 connectDB()
   .then(() => {
