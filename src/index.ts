@@ -15,8 +15,8 @@ app.use('/api/faqs', faqRoutes);
 connectDB()
   .then(() => {
     console.log("MongoDB Connected");
-    app.listen(process.env.PORT || 8000, () => {
-      console.log(`running on port ${process.env.PORT || 8000}`);
+    app.listen(process.env.PORT || 5000, () => {
+      console.log(`running on port ${process.env.PORT || 5000}`);
     });
   })
   .catch((error) => {
