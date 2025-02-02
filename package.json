@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -22,12 +22,23 @@
     "wysiwyg-editor-node-sdk": "^4.4.0"
   },
   "devDependencies": {
+    "@types/chai": "^5.0.1",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/mocha": "^10.0.10",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^22.13.0",
+    "@types/supertest": "^6.0.2",
+    "chai": "^5.1.2",
+    "chai-http": "^5.1.1",
+    "jest": "^29.7.0",
+    "mocha": "^11.1.0",
     "nodemon": "^3.1.9",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.7.3"
   }
 }
