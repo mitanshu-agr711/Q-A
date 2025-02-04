@@ -2,11 +2,11 @@ import dotenv from "dotenv";
 dotenv.config(); 
 import express from "express";
 import cors from "cors";
-import connectDB from "./DB/connect";
+import connectDB from "./DB/connect.js";
 import bodyParser from 'body-parser';
 const app = express();
-import faqRoutes from './controller/qa.controller';
-import uploadRoutes from './utils/imgUploder';
+import faqRoutes from './controller/qa.controller.js';
+import uploadRoutes from './utils/imgUploder.js';
 
 app.use(cors());
 app.use(bodyParser.json());
