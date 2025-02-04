@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test":  "mocha 'src/test/**/*.test.js'",
     "start": "nodemon src/index.js"
   },
   "type": "module",
@@ -31,7 +31,6 @@
     "wysiwyg-editor-node-sdk": "^4.4.0"
   },
   "devDependencies": {
- 
     "chai": "^5.1.2",
     "chai-http": "^5.1.1",
     "mocha": "^11.1.0",
